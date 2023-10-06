@@ -3,7 +3,6 @@ def pig_latin(word):
         piglatin = word + "way"    
     else:
         const = ''
-        vow = '' 
         a= 0
         for c in word:
             if c not in "aeiou" and a == 0:
@@ -11,6 +10,7 @@ def pig_latin(word):
             elif c in "aeiou":
                     a = 1
             piglatin = word[len(const):] +const + "ay"
+    print(piglatin)
     return piglatin
 pig_latin("pig")
                 
